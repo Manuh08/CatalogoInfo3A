@@ -42,11 +42,11 @@ import { useState } from "react";
 
 export default function Home() {
   const [listaProdutos, setProdutos] = useState([
-    { id: 1, nome: 'Produto A', preco: 'R$ 10,000' },
-    { id: 2, nome: 'Produto B', preco: 'R$ 20,000' },
-    { id: 3, nome: 'Produto C', preco: 'R$ 30,000' },
-    { id: 4, nome: 'Produto D', preco: 'R$ 40,000' },
-    { id: 5, nome: 'Produto E', preco: 'R$ 50,000' }
+    { id: 1, nome: 'BIZ', preco: 'R$ 10,000' },
+    { id: 2, nome: 'BMW', preco: 'R$ 20,000' },
+    { id: 3, nome: 'BROS 160', preco: 'R$ 30,000' },
+    { id: 4, nome: 'KAWASAKI', preco: 'R$ 40,000' },
+    { id: 5, nome: 'SUZUKI', preco: 'R$ 50,000' }
   ]);
 
   const [listaPedidos, setListaPedidos] = useState([]);
@@ -55,7 +55,7 @@ export default function Home() {
     setListaPedidos([...listaPedidos,objeto])
   }
 
-  const removerPedidos = (id) => {
+  const removerPedido = (id) => {
     let remover = false;
     let listaAux = listaPedidos.filter((produto)=> {
         if (remover == false) {
@@ -79,8 +79,8 @@ export default function Home() {
          listaProdutos.map((produto)=>
          <div key={produto.id}>
          <p>{produto.nome}</p>
-         <p>{produto.preço}</p>
-         <button onClick={()=> adicionarItemPedidos(produtos)}>Selecionar</button>
+         <p>{produto.preco}</p>
+         <button onClick={()=> adicionarItemPedidos(produto)}>Selecionar</button>
          </div>
          )
           }
@@ -88,7 +88,7 @@ export default function Home() {
             listaPedidos.map((produto)=>
             <div key={produto.id}>
             <p>{produto.nome}</p>
-            <p>{produto.preço}</p>
+            <p>{produto.preco}</p>
             <button onClick={()=> removerPedido(produto.id)}>Remover</button>
             </div>
             )
