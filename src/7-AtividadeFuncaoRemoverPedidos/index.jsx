@@ -29,7 +29,7 @@ export default function Home() {
                 return produto
             } else {
                 remover = true;
-                retorne null
+                return null
             }
         } else {
             return produto

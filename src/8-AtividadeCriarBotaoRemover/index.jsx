@@ -63,7 +63,7 @@ export default function Home() {
                 return produto
             } else {
                 remover = true;
-                retorne null
+                return null
             }
         } else {
             return produto
@@ -89,7 +89,7 @@ export default function Home() {
             <div key={produto.id}>
             <p>{produto.nome}</p>
             <p>{produto.preço}</p>
-            <button onClick={=> removerPedido(produto.id)}>Remover</button>
+            <button onClick={()=> removerPedido(produto.id)}>Remover</button>
             </div>
             )
           }
