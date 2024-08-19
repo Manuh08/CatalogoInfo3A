@@ -39,6 +39,8 @@
 // No conteúdo do botão, coloque o texto "Remover".
 
 import { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [listaProdutos, setProdutos] = useState([
@@ -72,6 +74,10 @@ export default function Home() {
     setListaPedidos(listaAux);
   }
   return (
+    <>
+    <Header titulo={"Meu mundo"}/>
+    <Footer desenvolvedor={"Manuela"}/>
+    
     <div>
          <h1>MotoFlow</h1>
 
@@ -94,6 +100,6 @@ export default function Home() {
             )
           }
     </div>
-   
+    </>
   );
 }

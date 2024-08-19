@@ -1,3 +1,10 @@
+header{
+    left:0 ;
+    background-color: #ff0000;
+    
+    
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
