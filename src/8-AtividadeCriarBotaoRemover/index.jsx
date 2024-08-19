@@ -76,7 +76,7 @@ export default function Home() {
   return (
     <>
     <Header titulo={"Meu mundo"}/>
-    <Footer desenvolvedor={"Manuela"}/>
+   
     
     <div>
          <h1>MotoFlow</h1>
@@ -100,6 +100,7 @@ export default function Home() {
             )
           }
     </div>
+    <Footer desenvolvedor={"Manuela"}/>
     </>
   );
 }

@@ -1,8 +1,25 @@
 header{
-    left:0 ;
-    background-color: #ff0000;
+    background-color: #e054c6;
+    position: fixed;
+    right: 0;
+    width: 100%;
     
-    
+}
+
+#div-header{
+    left:10 ;
+}
+#div-footer{
+    left:10 ;
+}
+
+footer{
+    background-color: #e054c6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 body {
@@ -26,11 +43,11 @@ body {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     margin-bottom: 20px;
-    color: #333;
+    color: #f1c7eb;
 }
 
 ol {
